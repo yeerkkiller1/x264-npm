@@ -7,8 +7,11 @@ function nativeRequire(name) {
 }
 
 function getx264Source() {
-    var packageJSON = JSON.parse(fs.readFileSync(__dirname + "/package.json").toString());
-    var x264Sources = Object.keys(packageJSON.optionalDependencies).filter(x => x.startsWith("x264-"));
+    //var packageJSON = JSON.parse(fs.readFileSync(__dirname + "/package.json").toString());
+    //var x264Sources = Object.keys(packageJSON.optionalDependencies).filter(x => x.startsWith("x264-"));
+    // We can't read package.json, because webpack may collapse us, and I don't know how to fix that without adding
+    //  ANOTHER package, that wraps this.
+    var x264Sources = ["x264-linuxarm", "x264-osx64", "x264-win64"];
     for(let x264Source of x264Sources) {
         try {
             var x264 = nativeRequire(x264Source);
