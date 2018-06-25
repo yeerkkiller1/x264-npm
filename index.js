@@ -34,6 +34,6 @@ async function x264(...args) {
     }
 };
 
-modeule.exports = {
+module.exports = {
     x264: x264
 };
