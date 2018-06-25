@@ -25,6 +25,7 @@ function getx264Source() {
 var x264PathFnc = getx264Source();
 var x264Path = x264PathFnc();
 async function x264(...args) {
+    console.log(`Using x264 path ${x264Path}`);
     try {
         var result = await spawn(x264Path, args, { capture: ["stdout", "stderr"] });
         return result.stdout.toString();
