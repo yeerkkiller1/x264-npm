@@ -1,0 +1,14 @@
+{
+    "name": "x264-npm",
+    "version": "0.155.2901",
+    "description": "npm wrapper for x264",
+    "optionalDependencies": {
+        "x264-linuxarm": "git+https://github.com/yeerkkiller1/x264-linuxarm.git#0.155.2705",
+        "x264-osx64": "git+https://github.com/yeerkkiller1/x264-osx64.git#0.155.2893",
+        "x264-win64": "git+https://github.com/yeerkkiller1/x264-win64.git#0.155.2901"
+    },
+    "main": "index.js",
+    "dependencies": {
+        "child-process-promise": "^2.2.1"
+    }
+}
