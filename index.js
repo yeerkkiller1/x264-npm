@@ -24,7 +24,7 @@ function getx264Source() {
 
 var x264PathFnc = getx264Source();
 var x264Path = x264PathFnc();
-export default async function(...args) {
+modeule.exports = async function(...args) {
     try {
         var result = await spawn(x264Path, args, { capture: ["stdout", "stderr"] });
         return result.stdout.toString();
