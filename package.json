@@ -1,6 +1,6 @@
 {
     "name": "x264-npm",
-    "version": "0.155.7",
+    "version": "0.155.8",
     "description": "npm wrapper for x264",
     "optionalDependencies": {
         "x264-win64": "0.155.2901",
