@@ -1,11 +1,11 @@
 {
     "name": "x264-npm",
-    "version": "0.155.6",
+    "version": "0.155.7",
     "description": "npm wrapper for x264",
     "optionalDependencies": {
         "x264-win64": "0.155.2901",
-        "x264-osx64": "0.155.289-3.1",
-        "x264-linuxarm": "0.142.2431"
+        "x264-osx64": "0.155.289-3.2",
+        "x264-linuxarm": "0.142.243-1.8"
     },
     "main": "index.js",
     "dependencies": {
