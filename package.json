@@ -4,8 +4,8 @@
     "description": "npm wrapper for x264",
     "optionalDependencies": {
         "x264-win64": "0.155.2901",
-        "x264-osx64": "0.155.289-3.2",
-        "x264-linuxarm": "0.142.243-1.8"
+        "x264-osx64": "0.155.289-3.3",
+        "x264-linuxarm": "0.142.243-1.9"
     },
     "main": "index.js",
     "dependencies": {
